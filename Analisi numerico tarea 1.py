@@ -1,8 +1,9 @@
+#Problema 1
 x=float(input('Inngrese los ºF a convertir: '))
 C=(x-32)*5/9
 print('Los',x,'ºF equivalen a',C,'ºC')
 
-
+#Problema 2
 from cmath import sin, sinh, exp, e,cos, tan
 y=float(input('Ingrese un valor para y: '))
 s1=sinh(y)
@@ -13,7 +14,7 @@ s2=(exp(y)-exp(-y))/2
 s3=(e**(y)-e**(-y))/2
 
 print(s1,'=',s2,'=',s3)
-
+#Problema 3
 import random as  rn
 
 z=rn.randint(0, 20)
@@ -24,14 +25,14 @@ s6=cos(z)+1j*sin(z)
 s7=exp(1j*z)
 
 print('Seno de(',z,'i)=',s4,';Seno Hiperbòlico de (',z,'i)=',s5)
-
+#Problema 4
 from sympy import(symbols, diff, integrate, Rational, lambdify)
 
 t, v0, g= symbols('t v0 g')
 y=v0*t-Rational(1,2)*g*t**2
 print('primer derivada',diff(y,t))
 print('Segunda derivada',diff(y,t,t))
-
+#Problema 5
 from math import radians
 
 v1=float(input('Ingrese la velocidad inicial: '))
